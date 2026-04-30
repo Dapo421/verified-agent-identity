@@ -19,4 +19,7 @@ jobs:
           node-version: 18
 
       - name: Install Skill
-        run: npx clawhub@latest install verified-agent-identity
+  run: |
+    npm install -g npm@latest
+    npm install -g clawhub
+    clawhub install verified-agent-identity
